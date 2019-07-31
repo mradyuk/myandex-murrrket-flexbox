@@ -1,8 +1,96 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
+    <header>
+        <h2>Myandex.Murrrket</h2>
+    </header>
+    <section class="wrapper">
+        <div class="left">
+            <nav class="sidenav">
+                <a href="#">Abyssinian</a>
+                <a href="#">Bobtail</a>
+                <a href="#">Bengal</a>
+                <a href="#">Oriental</a>
+                <a href="#">Shorthair</a>
+            </nav>
+        </div>
+        <div class="content">
+
+            <div class="row">
+                <div class="item item-1">
+                    <img src="http://bit.ly/2ftHj4j" class="item-image" alt="American Bobtail Cat">
+                    <p class="item-info">American Bobtail Cat</p>
+                </div>
+                <div class="item item-2">
+                    <img src="http://bit.ly/2fiNTKg" class="item-image" alt="Abyssinian Cat">
+                    <p class="item-info">American Bobtail Cat</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item item-1">
+                    <img src="http://bit.ly/2gf9GnW" class="item-image" alt="American Curl Cat">
+                    <p class="item-info">American Bobtail Cat</p>
+                </div>
+                <div class="item item-1">
+                    <img src="http://bit.ly/2fiNTKg" class="item-image" alt="American Shorthair Cat">
+                    <p class="item-info">American Bobtail Cat</p>
+                </div>
+                <div class="item item-1">
+                    <img src="http://bit.ly/2gf9GnW" class="item-image" alt="American Wirehair Cat">
+                    <p class="item-info">American Bobtail Cat</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item item-3">
+                    <img src="http://bit.ly/2gacQrX" class="item-image" alt="Bengal Cat">
+                    <p class="item-info">American Bobtail Cat</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="rating-div">
+                <p>Rating</p>
+                <input type="checkbox" id="sort"><label for="sort">Descending sort</label>
+
+                <div class="high">
+                    <p>Shorthair</p>
+                    <progress id="shorthair" max="10" class="progress-high" value="10"></progress>
+                    <label for="shorthair">10</label>
+                </div>
+                <div class="high">
+                    <p>Bobtail</p>
+                    <progress id="bobtail" max="10" class="progress-high" value="9"></progress>
+                    <label for="bobtail">9</label>
+                </div>
+                <div class="medium">
+                    <p>Abyssinian</p>
+                    <progress id="abyssinian" class="progress-medium" max="10" value="5"></progress>
+                    <label for="abyssinian">5</label>
+                </div>
+                <div class="low">
+                    <p>Oriental</p>
+                    <progress id="oriental" max="10" class="progress-low" value="4"></progress>
+                    <label for="oriental">4</label>
+                </div>
+
+                <div class="low">
+                    <p>Bengal</p>
+                    <progress id="bengal" max="10" class="progress-low" value="3"></progress>
+                    <label for="bengal">3</label>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
 </body>
+
 </html>

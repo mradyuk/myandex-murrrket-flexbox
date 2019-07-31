@@ -1,0 +1,163 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: Antenna, Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    border: 1px solid gray;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    border: 1px solid gray;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    background-color: #efefef;
+    border: 1px solid gray;
+}
+
+.left {
+    width: 15%;
+    border: 1px solid gray;
+}
+
+.sidenav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidenav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #1b1b1b;
+    height: 30px;
+    padding: 20px 10px 0 20px;
+}
+
+.sidenav a:hover {
+    background-color: #bdbdbd;
+}
+
+.right {
+    width: 15%;
+    padding: 20px;
+    border: 1px solid gray;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.item {
+    height: 400px;
+    padding: 10px;
+    box-sizing: border-box;
+    /*  flex-grow: 1;*/
+}
+
+.item:hover {
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .5);
+}
+
+.item-1 {
+    width: 33.33%;
+}
+
+.item-2 {
+    width: 66.66%;
+    /*  flex-grow: 2;*/
+}
+
+.item-3 {
+    width: 100%;
+}
+
+.item-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item-info {
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    bottom: -5px;
+    color: #fff;
+    background-color: #bdbdbd;
+    display: none;
+}
+
+.item-info:hover {
+    display: block;
+}
+
+progress {
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+}
+
+.progress-low {
+    color: #ef5350;
+}
+
+.progress-low::-webkit-progress-value {
+    background: linear-gradient(45deg,#ef5350, #ffcdd2);
+}
+
+.progress-medium {
+    color: #ffee58;
+}
+
+.progress-medium::-webkit-progress-value {
+    background: linear-gradient(45deg,#ffee58, #fff9c4);
+}
+
+.progress-high {
+    color: #66bb6a;
+}
+
+.progress-high::-webkit-progress-value {
+    background: linear-gradient(45deg,#66bb6a, #c8e6c9);
+}
+
+.rating-div{
+    display:flex;
+    flex-direction: column;
+}
+
+
+input[id='sort']:checked~.low {
+    -webkit-order: 1;
+    order: 1;
+}
+
+input[id='sort']:checked~.medium {
+    -webkit-order: 2;
+    order: 2;
+}
+
+input[id='sort']:checked~.high {
+    -webkit-order: 3;
+    order: 3;
+}
